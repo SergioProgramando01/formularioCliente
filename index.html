@@ -3,50 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brief Aniversario Distrioviedo</title>
+<title>Brief Campaña 10 Años</title>
 
 <style>
 body{
     font-family: Arial, sans-serif;
-    background:#f4f6f9;
+    background:#f2f4f7;
     padding:20px;
 }
 .container{
-    max-width:600px;
+    max-width:750px;
     margin:auto;
     background:#ffffff;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 h2{
     text-align:center;
     color:#1F5FAF;
 }
 .section{
-    margin-bottom:20px;
+    margin-bottom:30px;
 }
 label{
     font-weight:bold;
     display:block;
-    margin-bottom:5px;
+    margin-bottom:8px;
+}
+small{
+    display:block;
+    margin-bottom:10px;
+    color:#555;
+}
+.checkbox-group{
+    margin-bottom:6px;
 }
 textarea, input[type="text"]{
     width:100%;
     padding:8px;
-    margin-top:5px;
-    margin-bottom:10px;
-    border-radius:5px;
+    margin-top:8px;
+    border-radius:6px;
     border:1px solid #ccc;
 }
 button{
     width:100%;
-    padding:12px;
+    padding:14px;
     background:#FFC400;
     border:none;
     border-radius:8px;
     font-weight:bold;
     cursor:pointer;
+    font-size:16px;
 }
 button:hover{
     background:#e6b000;
@@ -57,31 +65,89 @@ button:hover{
 <body>
 
 <div class="container">
-<h2>Formulario Aniversario 10 Años</h2>
+<h2>Brief Campaña 10 Años Distrioviedo</h2>
 
+<!-- FRASE -->
 <div class="section">
-<label>Frase oficial del aniversario:</label>
-<textarea id="frase"></textarea>
+<label>🎯 1️⃣ Frase oficial del aniversario</label>
+<small>Pueden marcar varias, todas o ninguna. Si prefieren otra frase, escríbanla abajo.</small>
+
+<div class="checkbox-group"><input type="checkbox" name="frase" value="10 años distribuyendo confianza."> 10 años distribuyendo confianza.</div>
+<div class="checkbox-group"><input type="checkbox" name="frase" value="Una década moviendo progreso."> Una década moviendo progreso.</div>
+<div class="checkbox-group"><input type="checkbox" name="frase" value="10 años liderando el movimiento."> 10 años liderando el movimiento.</div>
+<div class="checkbox-group"><input type="checkbox" name="frase" value="Una década creciendo junto a nuestros clientes."> Una década creciendo junto a nuestros clientes.</div>
+<div class="checkbox-group"><input type="checkbox" name="frase" value="10 años construyendo confianza."> 10 años construyendo confianza.</div>
+<div class="checkbox-group"><input type="checkbox" name="frase" value="10 años en movimiento."> 10 años en movimiento.</div>
+<div class="checkbox-group"><input type="checkbox" name="frase" value="Liderando la distribución desde hace 10 años."> Liderando la distribución desde hace 10 años.</div>
+
+<input type="text" id="fraseLibre" placeholder="Escriba su propia frase (opcional)">
 </div>
 
+<!-- NOMBRE CELEBRACION -->
 <div class="section">
-<label>Duración del aniversario:</label>
-<textarea id="duracion"></textarea>
+<label>📛 ¿Cómo desean llamar la celebración?</label>
+<small>Pueden marcar varias o escribir otra opción.</small>
+
+<div class="checkbox-group"><input type="checkbox" name="nombre" value="Aniversario"> Aniversario</div>
+<div class="checkbox-group"><input type="checkbox" name="nombre" value="Década"> Década</div>
+<div class="checkbox-group"><input type="checkbox" name="nombre" value="10 años"> 10 años</div>
+
+<input type="text" id="nombreLibre" placeholder="Otro término (opcional)">
 </div>
 
+<!-- DURACION -->
 <div class="section">
-<label>Palabras clave (Confianza, Crecimiento, etc):</label>
-<textarea id="palabras"></textarea>
+<label>📅 2️⃣ Duración del aniversario</label>
+
+<div class="checkbox-group"><input type="checkbox" name="duracion" value="Un día específico"> Un día específico</div>
+<div class="checkbox-group"><input type="checkbox" name="duracion" value="Semana de aniversario"> Semana de aniversario Distrioviedo</div>
+<div class="checkbox-group"><input type="checkbox" name="duracion" value="Todo el mes"> Todo el mes</div>
+<div class="checkbox-group"><input type="checkbox" name="duracion" value="Fechas especiales con promociones"> Fechas especiales con promociones</div>
+
+<input type="text" id="duracionLibre" placeholder="Otra opción (opcional)">
 </div>
 
+<!-- PALABRAS -->
 <div class="section">
-<label>¿Habrá promociones / lanzamiento / evento físico?</label>
-<textarea id="promociones"></textarea>
+<label>🧠 3️⃣ Palabras clave</label>
+
+<div class="checkbox-group"><input type="checkbox" name="palabra" value="Confianza"> Confianza</div>
+<div class="checkbox-group"><input type="checkbox" name="palabra" value="Crecimiento"> Crecimiento</div>
+<div class="checkbox-group"><input type="checkbox" name="palabra" value="Compromiso"> Compromiso</div>
+<div class="checkbox-group"><input type="checkbox" name="palabra" value="Liderazgo"> Liderazgo</div>
+<div class="checkbox-group"><input type="checkbox" name="palabra" value="Movimiento"> Movimiento</div>
+
+<input type="text" id="palabraLibre" placeholder="Otra palabra (opcional)">
 </div>
 
+<!-- ACTIVACIONES -->
 <div class="section">
-<label>Espacios disponibles para grabación:</label>
-<textarea id="espacios"></textarea>
+<label>🎉 4️⃣ Activaciones comerciales</label>
+
+<div class="checkbox-group"><input type="checkbox" name="activacion" value="Promociones especiales"> Promociones especiales</div>
+<div class="checkbox-group"><input type="checkbox" name="activacion" value="Lanzamiento de producto"> Lanzamiento de producto nuevo</div>
+<div class="checkbox-group"><input type="checkbox" name="activacion" value="Precios especiales"> Precios especiales por esos días</div>
+<div class="checkbox-group"><input type="checkbox" name="activacion" value="Evento físico"> Evento físico de aniversario</div>
+
+<input type="text" id="activacionLibre" placeholder="Otra activación (opcional)">
+</div>
+
+<!-- ESPACIOS -->
+<div class="section">
+<label>🎥 5️⃣ Espacios para grabación</label>
+
+<div class="checkbox-group"><input type="checkbox" name="espacio" value="Bodega"> Bodega</div>
+<div class="checkbox-group"><input type="checkbox" name="espacio" value="Carga de camiones"> Carga de camiones</div>
+<div class="checkbox-group"><input type="checkbox" name="espacio" value="Entregas"> Entregas</div>
+<div class="checkbox-group"><input type="checkbox" name="espacio" value="Oficinas"> Oficinas</div>
+
+<input type="text" id="espacioLibre" placeholder="Otro espacio (opcional)">
+</div>
+
+<!-- COMENTARIOS -->
+<div class="section">
+<label>📝 Comentarios adicionales</label>
+<textarea id="comentarios"></textarea>
 </div>
 
 <button onclick="enviarWhatsApp()">Enviar Respuestas</button>
@@ -89,34 +155,47 @@ button:hover{
 </div>
 
 <script>
+function obtenerGrupo(nombre){
+    let valores = [];
+    document.querySelectorAll(`input[name="${nombre}"]:checked`).forEach(el=>{
+        valores.push(el.value);
+    });
+    return valores.length > 0 ? valores.join(", ") : "Ninguna opción marcada";
+}
+
 function enviarWhatsApp(){
 
-let frase = document.getElementById("frase").value;
-let duracion = document.getElementById("duracion").value;
-let palabras = document.getElementById("palabras").value;
-let promociones = document.getElementById("promociones").value;
-let espacios = document.getElementById("espacios").value;
+let mensaje = `📌 Brief Campaña 10 Años Distrioviedo
 
-let mensaje = `📌 Brief Aniversario Distrioviedo 10 Años
+🎯 Frase seleccionada:
+${obtenerGrupo("frase")}
+Frase propia: ${document.getElementById("fraseLibre").value || "No agregó"}
 
-🟢 Frase oficial:
-${frase}
+📛 Nombre de la celebración:
+${obtenerGrupo("nombre")}
+Otro nombre: ${document.getElementById("nombreLibre").value || "No agregó"}
 
 📅 Duración:
-${duracion}
+${obtenerGrupo("duracion")}
+Otra duración: ${document.getElementById("duracionLibre").value || "No agregó"}
 
-🔑 Palabras clave:
-${palabras}
+🧠 Palabras clave:
+${obtenerGrupo("palabra")}
+Otra palabra: ${document.getElementById("palabraLibre").value || "No agregó"}
 
-🎉 Promociones / Evento:
-${promociones}
+🎉 Activaciones:
+${obtenerGrupo("activacion")}
+Otra activación: ${document.getElementById("activacionLibre").value || "No agregó"}
 
-🎥 Espacios para grabación:
-${espacios}
+🎥 Espacios:
+${obtenerGrupo("espacio")}
+Otro espacio: ${document.getElementById("espacioLibre").value || "No agregó"}
+
+📝 Comentarios:
+${document.getElementById("comentarios").value || "Sin comentarios"}
 `;
 
 let url = "https://wa.me/573134897000?text=" + encodeURIComponent(mensaje);
-
 window.open(url, "_blank");
 }
 </script>
